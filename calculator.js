@@ -33,6 +33,11 @@ const power = function(a,b) {
 	return Math.pow(a, b);
 };
 
+const inverse = function(num) {
+  if (num === 0 ) {return 'Err'
+  } else { return 1/num }
+};
+
 const factorial = function(num) {
 	if (num === 0) { 
     return 1;
@@ -44,17 +49,49 @@ const factorial = function(num) {
     } 
     return factorial
   }
-
 };
+function operate(operator, a,b,) {
+  switch (operator) {
+    case 'add':
+      return add(a,b);
+      break;
+    case 'subtract':
+      return subtract(a,b);
+      break;
+    case 'multiply':
+      return multiply(a,b);
+      break;
+    case 'divide':
+      return divide(a,b);
+      break;
+    case 'power':
+      return power(a,b);
+      break;
+    case 'factorial':
+      return factorial(a);
+      break;
+    case 'inverse':
+      return inverse(a);
+  }
+}
+
+/*
 console.log(add(2,6));
 console.log(subtract(12,8));
-console.log(sum(24,2));
+//console.log(sum(24,2));
 console.log(multiply(24,2));
 console.log(divide(10,2));
 console.log(power(5,3));
 console.log(factorial(4));
-
-
+console.log(inverse(6));#
+*/
+console.log('function add:' + operate('add',2,4));
+console.log('function subtract:' + operate('subtract',12,8));
+console.log('function multiply:' + operate('multiply',24,2));
+console.log('function divide:' + operate('divide',10,2));
+console.log('function power:' + operate('power',5,3));
+console.log('function factorial:' + operate('factorial',4));
+console.log('function inverse:' + operate('inverse',6));
 //console.log(factorial(10));
 // Do not edit below this line
 /*
