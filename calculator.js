@@ -1,3 +1,7 @@
+//create global value to store display value
+let displayValue = 0;
+
+
 const add = function(a,b) {
 	return a+b;
 };
@@ -104,3 +108,15 @@ module.exports = {
   factorial
 };
 */
+function writeNumber(num) {
+  //console.log('you pressed: ' + element.id)
+  //limit display to 10 numbers
+  elDisplay = document.getElementById("display")
+  if (elDisplay.textContent.length < 10) {
+    if (displayValue == 0) {displayValue = num;
+    } else {displayValue += num;
+    }
+  
+  elDisplay.textContent = displayValue;
+  }
+}
