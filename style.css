@@ -55,3 +55,17 @@
     font-size: 2.5em;
     font-weight: 900;
 }
+
+.clear {
+    background-color: red;
+}
+
+.clear:hover {
+    background-color: darkred;
+}
+
+p {
+    margin: 0;
+    line-height: 50px;
+    height: 50px;
+}
