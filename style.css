@@ -9,7 +9,7 @@
 }
 
 #display {
-    background-color: aquamarine;
+    background-color: #00b1c5 ; // rgba(127, 255, 212, 0.479);
     border:1px solid black;
     border-radius: 10px;
     margin: 10px 10px;
@@ -35,7 +35,7 @@
 }
 
 .button {
-    background-color: yellow;
+    background-color: hsla(60, 100%, 50%, 0.734);
     border:1px solid black;
     border-radius: 10px;
     margin: 10px 10px;
@@ -57,12 +57,21 @@
 }
 
 .clear {
-    background-color: red;
+    background-color: hwb(0 60% 7%);
 }
 
 .clear:hover {
-    background-color: darkred;
+    background-color: hwb(0 53% 13%);
 }
+
+.functional {
+    background-color: yellowgreen;
+}
+.functional:hover {
+    background-color: green;
+}
+
+
 
 p {
     margin: 0;
